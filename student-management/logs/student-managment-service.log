@@ -1,0 +1,356 @@
+2025-02-16T18:41:49.584-05:00  INFO 29780 --- [main] c.e.s.StudentManagementApplication       : Starting StudentManagementApplication using Java 23.0.2 with PID 29780 (C:\Users\mpudi\Desktop\Student-Management-System-main\student-management\target\classes started by mpudi in C:\Users\mpudi\Desktop\Student-Management-System-main\student-management)
+2025-02-16T18:41:49.585-05:00  INFO 29780 --- [main] c.e.s.StudentManagementApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-02-16T18:41:50.030-05:00  INFO 29780 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-16T18:41:50.064-05:00  INFO 29780 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 25 ms. Found 2 JPA repository interfaces.
+2025-02-16T18:41:50.379-05:00  INFO 29780 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-02-16T18:41:50.389-05:00  INFO 29780 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-16T18:41:50.390-05:00  INFO 29780 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-16T18:41:50.425-05:00  INFO 29780 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-16T18:41:50.426-05:00  INFO 29780 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 792 ms
+2025-02-16T18:41:50.521-05:00  INFO 29780 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-16T18:41:50.553-05:00  INFO 29780 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.5.Final
+2025-02-16T18:41:50.570-05:00  INFO 29780 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-02-16T18:41:50.747-05:00  INFO 29780 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-16T18:41:50.766-05:00  INFO 29780 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-02-16T18:41:51.010-05:00  INFO 29780 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@77cd235b
+2025-02-16T18:41:51.012-05:00  INFO 29780 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-02-16T18:41:51.041-05:00  WARN 29780 --- [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-02-16T18:41:51.041-05:00  WARN 29780 --- [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-02-16T18:41:51.054-05:00  INFO 29780 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-16T18:41:51.751-05:00  INFO 29780 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-16T18:41:51.810-05:00  INFO 29780 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-16T18:41:52.092-05:00  WARN 29780 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-16T18:41:52.147-05:00  WARN 29780 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Multiple @RequestMapping annotations found on public org.springframework.http.ResponseEntity com.example.student_management.api.StudentController.registerStudent(com.example.student_management.model.Student), but only the first will be used: [@org.springframework.web.bind.annotation.RequestMapping(consumes={}, headers={}, method={}, name="", params={}, path={"/register"}, produces={}, value={"/register"}), @org.springframework.web.bind.annotation.PostMapping(consumes={}, headers={}, name="", params={}, path={}, produces={}, value={})]
+2025-02-16T18:41:52.150-05:00  WARN 29780 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Multiple @RequestMapping annotations found on public org.springframework.http.ResponseEntity com.example.student_management.api.UniversityClassController.addclass(com.example.student_management.model.UniversityClass), but only the first will be used: [@org.springframework.web.bind.annotation.RequestMapping(consumes={}, headers={}, method={}, name="", params={}, path={"/add"}, produces={}, value={"/add"}), @org.springframework.web.bind.annotation.PostMapping(consumes={}, headers={}, name="", params={}, path={}, produces={}, value={})]
+2025-02-16T18:41:52.374-05:00  INFO 29780 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-02-16T18:41:52.380-05:00  INFO 29780 --- [main] c.e.s.StudentManagementApplication       : Started StudentManagementApplication in 3.127 seconds (process running for 3.589)
+2025-02-16T20:32:57.001-05:00  INFO 29780 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-16T20:32:57.002-05:00  INFO 29780 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-02-16T20:32:57.003-05:00  INFO 29780 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-02-16T20:37:55.994-05:00  INFO 29780 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-16T20:37:56.000-05:00  INFO 29780 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-02-16T20:37:56.004-05:00  INFO 29780 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-16T20:37:56.007-05:00  INFO 29780 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-02-16T20:37:56.010-05:00  INFO 29780 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-02-16T20:37:59.883-05:00  INFO 31416 --- [main] c.e.s.StudentManagementApplication       : Starting StudentManagementApplication using Java 23.0.2 with PID 31416 (C:\Users\mpudi\Desktop\Student-Management-System-main\student-management\target\classes started by mpudi in C:\Users\mpudi\Desktop\Student-Management-System-main\student-management)
+2025-02-16T20:37:59.885-05:00  INFO 31416 --- [main] c.e.s.StudentManagementApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-02-16T20:38:00.348-05:00  INFO 31416 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-16T20:38:00.375-05:00  INFO 31416 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21 ms. Found 2 JPA repository interfaces.
+2025-02-16T20:38:00.757-05:00  INFO 31416 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-02-16T20:38:00.769-05:00  INFO 31416 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-16T20:38:00.770-05:00  INFO 31416 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-16T20:38:00.817-05:00  INFO 31416 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-16T20:38:00.817-05:00  INFO 31416 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 888 ms
+2025-02-16T20:38:00.933-05:00  INFO 31416 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-16T20:38:00.995-05:00  INFO 31416 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.5.Final
+2025-02-16T20:38:01.027-05:00  INFO 31416 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-02-16T20:38:01.223-05:00  INFO 31416 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-16T20:38:01.246-05:00  INFO 31416 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-02-16T20:38:01.607-05:00  INFO 31416 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@25d0b918
+2025-02-16T20:38:01.609-05:00  INFO 31416 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-02-16T20:38:01.646-05:00  WARN 31416 --- [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-02-16T20:38:01.647-05:00  WARN 31416 --- [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-02-16T20:38:01.660-05:00  INFO 31416 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-16T20:38:02.410-05:00  INFO 31416 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-16T20:38:02.469-05:00  INFO 31416 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-16T20:38:02.765-05:00  WARN 31416 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-16T20:38:02.816-05:00  WARN 31416 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Multiple @RequestMapping annotations found on public org.springframework.http.ResponseEntity com.example.student_management.api.StudentController.registerStudent(com.example.student_management.model.Student), but only the first will be used: [@org.springframework.web.bind.annotation.RequestMapping(consumes={}, headers={}, method={}, name="", params={}, path={"/register"}, produces={}, value={"/register"}), @org.springframework.web.bind.annotation.PostMapping(consumes={}, headers={}, name="", params={}, path={}, produces={}, value={})]
+2025-02-16T20:38:02.820-05:00  WARN 31416 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Multiple @RequestMapping annotations found on public org.springframework.http.ResponseEntity com.example.student_management.api.UniversityClassController.addclass(com.example.student_management.model.UniversityClass), but only the first will be used: [@org.springframework.web.bind.annotation.RequestMapping(consumes={}, headers={}, method={}, name="", params={}, path={"/add"}, produces={}, value={"/add"}), @org.springframework.web.bind.annotation.PostMapping(consumes={}, headers={}, name="", params={}, path={}, produces={}, value={})]
+2025-02-16T20:38:03.000-05:00  INFO 31416 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-02-16T20:38:03.005-05:00  INFO 31416 --- [main] c.e.s.StudentManagementApplication       : Started StudentManagementApplication in 3.46 seconds (process running for 4.063)
+2025-02-16T21:03:46.455-05:00  INFO 31416 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-16T21:03:46.460-05:00  INFO 31416 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-02-16T21:03:46.464-05:00  INFO 31416 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-16T21:03:46.466-05:00  INFO 31416 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-02-16T21:03:46.473-05:00  INFO 31416 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-02-16T21:03:48.688-05:00  INFO 28564 --- [main] c.e.s.StudentManagementApplication       : Starting StudentManagementApplication using Java 23.0.2 with PID 28564 (C:\Users\mpudi\Desktop\Student-Management-System-main\student-management\target\classes started by mpudi in C:\Users\mpudi\Desktop\Student-Management-System-main\student-management)
+2025-02-16T21:03:48.690-05:00  INFO 28564 --- [main] c.e.s.StudentManagementApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-02-16T21:03:49.110-05:00  INFO 28564 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-16T21:03:49.141-05:00  INFO 28564 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 25 ms. Found 2 JPA repository interfaces.
+2025-02-16T21:03:49.444-05:00  INFO 28564 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-02-16T21:03:49.455-05:00  INFO 28564 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-16T21:03:49.455-05:00  INFO 28564 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-16T21:03:49.492-05:00  INFO 28564 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-16T21:03:49.493-05:00  INFO 28564 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 757 ms
+2025-02-16T21:03:49.620-05:00  INFO 28564 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-16T21:03:49.670-05:00  INFO 28564 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.5.Final
+2025-02-16T21:03:49.695-05:00  INFO 28564 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-02-16T21:03:49.891-05:00  INFO 28564 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-16T21:03:49.914-05:00  INFO 28564 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-02-16T21:03:50.201-05:00  INFO 28564 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3fe8ad3f
+2025-02-16T21:03:50.203-05:00  INFO 28564 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-02-16T21:03:50.240-05:00  WARN 28564 --- [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-02-16T21:03:50.241-05:00  WARN 28564 --- [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-02-16T21:03:50.254-05:00  INFO 28564 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-16T21:03:50.893-05:00  INFO 28564 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-16T21:03:50.948-05:00  INFO 28564 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-16T21:03:51.200-05:00  WARN 28564 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-16T21:03:51.245-05:00  WARN 28564 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Multiple @RequestMapping annotations found on public org.springframework.http.ResponseEntity com.example.student_management.api.StudentController.registerStudent(com.example.student_management.model.Student), but only the first will be used: [@org.springframework.web.bind.annotation.RequestMapping(consumes={}, headers={}, method={}, name="", params={}, path={"/register"}, produces={}, value={"/register"}), @org.springframework.web.bind.annotation.PostMapping(consumes={}, headers={}, name="", params={}, path={}, produces={}, value={})]
+2025-02-16T21:03:51.249-05:00  WARN 28564 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Multiple @RequestMapping annotations found on public org.springframework.http.ResponseEntity com.example.student_management.api.UniversityClassController.addclass(com.example.student_management.model.UniversityClass), but only the first will be used: [@org.springframework.web.bind.annotation.RequestMapping(consumes={}, headers={}, method={}, name="", params={}, path={"/add"}, produces={}, value={"/add"}), @org.springframework.web.bind.annotation.PostMapping(consumes={}, headers={}, name="", params={}, path={}, produces={}, value={})]
+2025-02-16T21:03:51.416-05:00  INFO 28564 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-02-16T21:03:51.421-05:00  INFO 28564 --- [main] c.e.s.StudentManagementApplication       : Started StudentManagementApplication in 3.084 seconds (process running for 3.737)
+2025-02-16T21:23:06.005-05:00  INFO 3384 --- [main] c.e.s.StudentManagementApplication       : Starting StudentManagementApplication using Java 17.0.11 with PID 3384 (C:\Users\mpudi\Desktop\Student-Management-System-main\student-management\target\classes started by mpudi in C:\Users\mpudi\Desktop\Student-Management-System-main\student-management)
+2025-02-16T21:23:06.007-05:00  INFO 3384 --- [main] c.e.s.StudentManagementApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-02-16T21:23:06.378-05:00  INFO 3384 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-16T21:23:06.424-05:00  INFO 3384 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 37 ms. Found 2 JPA repository interfaces.
+2025-02-16T21:23:06.756-05:00  INFO 3384 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-02-16T21:23:06.767-05:00  INFO 3384 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-16T21:23:06.767-05:00  INFO 3384 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-16T21:23:06.823-05:00  INFO 3384 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-16T21:23:06.823-05:00  INFO 3384 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 787 ms
+2025-02-16T21:23:06.929-05:00  INFO 3384 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-16T21:23:06.958-05:00  INFO 3384 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.5.Final
+2025-02-16T21:23:06.978-05:00  INFO 3384 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-02-16T21:23:07.126-05:00  INFO 3384 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-16T21:23:07.149-05:00  INFO 3384 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-02-16T21:23:07.339-05:00  INFO 3384 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6233c6c2
+2025-02-16T21:23:07.341-05:00  INFO 3384 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-02-16T21:23:07.374-05:00  WARN 3384 --- [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-02-16T21:23:07.375-05:00  WARN 3384 --- [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-02-16T21:23:07.391-05:00  INFO 3384 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-16T21:23:07.937-05:00  INFO 3384 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-16T21:23:07.982-05:00  INFO 3384 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-16T21:23:08.270-05:00  WARN 3384 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-16T21:23:08.323-05:00  WARN 3384 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Multiple @RequestMapping annotations found on public org.springframework.http.ResponseEntity com.example.student_management.api.StudentController.registerStudent(com.example.student_management.model.Student), but only the first will be used: [@org.springframework.web.bind.annotation.RequestMapping(consumes={}, headers={}, method={}, name="", params={}, path={"/register"}, produces={}, value={"/register"}), @org.springframework.web.bind.annotation.PostMapping(consumes={}, headers={}, name="", params={}, path={}, produces={}, value={})]
+2025-02-16T21:23:08.327-05:00  WARN 3384 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Multiple @RequestMapping annotations found on public org.springframework.http.ResponseEntity com.example.student_management.api.UniversityClassController.addclass(com.example.student_management.model.UniversityClass), but only the first will be used: [@org.springframework.web.bind.annotation.RequestMapping(consumes={}, headers={}, method={}, name="", params={}, path={"/add"}, produces={}, value={"/add"}), @org.springframework.web.bind.annotation.PostMapping(consumes={}, headers={}, name="", params={}, path={}, produces={}, value={})]
+2025-02-16T21:23:08.496-05:00  WARN 3384 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2025-02-16T21:23:08.496-05:00  INFO 3384 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-16T21:23:08.498-05:00  INFO 3384 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-02-16T21:23:08.504-05:00  INFO 3384 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-02-16T21:23:08.513-05:00  INFO 3384 --- [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-02-16T21:23:08.526-05:00 ERROR 3384 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2025-02-16T21:24:46.870-05:00  INFO 31308 --- [main] c.e.s.StudentManagementApplication       : Starting StudentManagementApplication using Java 17.0.11 with PID 31308 (C:\Users\mpudi\Desktop\Student-Management-System-main\student-management\target\classes started by mpudi in C:\Users\mpudi\Desktop\Student-Management-System-main\student-management)
+2025-02-16T21:24:46.871-05:00  INFO 31308 --- [main] c.e.s.StudentManagementApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-02-16T21:24:47.273-05:00  INFO 31308 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-16T21:24:47.303-05:00  INFO 31308 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23 ms. Found 2 JPA repository interfaces.
+2025-02-16T21:24:47.625-05:00  INFO 31308 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-02-16T21:24:47.639-05:00  INFO 31308 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-16T21:24:47.639-05:00  INFO 31308 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-16T21:24:47.689-05:00  INFO 31308 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-16T21:24:47.690-05:00  INFO 31308 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 790 ms
+2025-02-16T21:24:47.789-05:00  INFO 31308 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-16T21:24:47.819-05:00  INFO 31308 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.5.Final
+2025-02-16T21:24:47.838-05:00  INFO 31308 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-02-16T21:24:47.989-05:00  INFO 31308 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-16T21:24:48.008-05:00  INFO 31308 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-02-16T21:24:48.185-05:00  INFO 31308 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@416b1265
+2025-02-16T21:24:48.187-05:00  INFO 31308 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-02-16T21:24:48.214-05:00  WARN 31308 --- [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-02-16T21:24:48.215-05:00  WARN 31308 --- [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-02-16T21:24:48.227-05:00  INFO 31308 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-16T21:24:48.706-05:00  INFO 31308 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-16T21:24:48.748-05:00  INFO 31308 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-16T21:24:48.972-05:00  WARN 31308 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-16T21:24:49.019-05:00  WARN 31308 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Multiple @RequestMapping annotations found on public org.springframework.http.ResponseEntity com.example.student_management.api.StudentController.registerStudent(com.example.student_management.model.Student), but only the first will be used: [@org.springframework.web.bind.annotation.RequestMapping(consumes={}, headers={}, method={}, name="", params={}, path={"/register"}, produces={}, value={"/register"}), @org.springframework.web.bind.annotation.PostMapping(consumes={}, headers={}, name="", params={}, path={}, produces={}, value={})]
+2025-02-16T21:24:49.023-05:00  WARN 31308 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Multiple @RequestMapping annotations found on public org.springframework.http.ResponseEntity com.example.student_management.api.UniversityClassController.addclass(com.example.student_management.model.UniversityClass), but only the first will be used: [@org.springframework.web.bind.annotation.RequestMapping(consumes={}, headers={}, method={}, name="", params={}, path={"/add"}, produces={}, value={"/add"}), @org.springframework.web.bind.annotation.PostMapping(consumes={}, headers={}, name="", params={}, path={}, produces={}, value={})]
+2025-02-16T21:24:49.164-05:00  INFO 31308 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-02-16T21:24:49.170-05:00  INFO 31308 --- [main] c.e.s.StudentManagementApplication       : Started StudentManagementApplication in 2.554 seconds (process running for 2.761)
+2025-02-16T21:56:28.957-05:00  INFO 9864 --- [main] c.e.s.StudentManagementApplication       : Starting StudentManagementApplication using Java 23.0.2 with PID 9864 (C:\Users\mpudi\Desktop\Student-Management-System-main\student-management\target\classes started by mpudi in C:\Users\mpudi\Desktop\Student-Management-System-main\student-management)
+2025-02-16T21:56:28.958-05:00  INFO 9864 --- [main] c.e.s.StudentManagementApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-02-16T21:56:29.507-05:00  INFO 9864 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-16T21:56:29.546-05:00  INFO 9864 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 30 ms. Found 2 JPA repository interfaces.
+2025-02-16T21:56:29.947-05:00  INFO 9864 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-02-16T21:56:29.960-05:00  INFO 9864 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-16T21:56:29.961-05:00  INFO 9864 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-16T21:56:30.029-05:00  INFO 9864 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-16T21:56:30.029-05:00  INFO 9864 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1003 ms
+2025-02-16T21:56:30.141-05:00  INFO 9864 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-16T21:56:30.190-05:00  INFO 9864 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.5.Final
+2025-02-16T21:56:30.217-05:00  INFO 9864 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-02-16T21:56:30.434-05:00  INFO 9864 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-16T21:56:30.459-05:00  INFO 9864 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-02-16T21:56:30.767-05:00  INFO 9864 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@329b331f
+2025-02-16T21:56:30.769-05:00  INFO 9864 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-02-16T21:56:30.808-05:00  WARN 9864 --- [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-02-16T21:56:30.809-05:00  WARN 9864 --- [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-02-16T21:56:30.823-05:00  INFO 9864 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-16T21:56:31.580-05:00  INFO 9864 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-16T21:56:31.657-05:00  INFO 9864 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-16T21:56:32.031-05:00  WARN 9864 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-16T21:56:32.124-05:00  WARN 9864 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Multiple @RequestMapping annotations found on public org.springframework.http.ResponseEntity com.example.student_management.api.StudentController.registerStudent(com.example.student_management.model.Student), but only the first will be used: [@org.springframework.web.bind.annotation.RequestMapping(consumes={}, headers={}, method={}, name="", params={}, path={"/register"}, produces={}, value={"/register"}), @org.springframework.web.bind.annotation.PostMapping(consumes={}, headers={}, name="", params={}, path={}, produces={}, value={})]
+2025-02-16T21:56:32.129-05:00  WARN 9864 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Multiple @RequestMapping annotations found on public org.springframework.http.ResponseEntity com.example.student_management.api.UniversityClassController.addclass(com.example.student_management.model.UniversityClass), but only the first will be used: [@org.springframework.web.bind.annotation.RequestMapping(consumes={}, headers={}, method={}, name="", params={}, path={"/add"}, produces={}, value={"/add"}), @org.springframework.web.bind.annotation.PostMapping(consumes={}, headers={}, name="", params={}, path={}, produces={}, value={})]
+2025-02-16T21:56:32.343-05:00  INFO 9864 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-02-16T21:56:32.347-05:00  INFO 9864 --- [main] c.e.s.StudentManagementApplication       : Started StudentManagementApplication in 3.757 seconds (process running for 4.436)
+2025-02-16T21:58:21.964-05:00  INFO 6632 --- [main] c.e.s.StudentManagementApplication       : Starting StudentManagementApplication using Java 17.0.11 with PID 6632 (C:\Users\mpudi\Desktop\Student-Management-System-main\student-management\target\classes started by mpudi in C:\Users\mpudi\Desktop\Student-Management-System-main\student-management)
+2025-02-16T21:58:21.966-05:00  INFO 6632 --- [main] c.e.s.StudentManagementApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-02-16T21:58:22.360-05:00  INFO 6632 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-16T21:58:22.394-05:00  INFO 6632 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 26 ms. Found 2 JPA repository interfaces.
+2025-02-16T21:58:22.731-05:00  INFO 6632 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-02-16T21:58:22.744-05:00  INFO 6632 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-16T21:58:22.744-05:00  INFO 6632 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-16T21:58:22.805-05:00  INFO 6632 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-16T21:58:22.806-05:00  INFO 6632 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 791 ms
+2025-02-16T21:58:22.902-05:00  INFO 6632 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-16T21:58:22.932-05:00  INFO 6632 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.5.Final
+2025-02-16T21:58:22.953-05:00  INFO 6632 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-02-16T21:58:23.126-05:00  INFO 6632 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-16T21:58:23.149-05:00  INFO 6632 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-02-16T21:58:23.399-05:00  INFO 6632 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6c24f61d
+2025-02-16T21:58:23.400-05:00  INFO 6632 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-02-16T21:58:23.433-05:00  WARN 6632 --- [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-02-16T21:58:23.434-05:00  WARN 6632 --- [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-02-16T21:58:23.445-05:00  INFO 6632 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-16T21:58:23.988-05:00  INFO 6632 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-16T21:58:24.039-05:00  INFO 6632 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-16T21:58:24.304-05:00  WARN 6632 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-16T21:58:24.353-05:00  WARN 6632 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Multiple @RequestMapping annotations found on public org.springframework.http.ResponseEntity com.example.student_management.api.StudentController.registerStudent(com.example.student_management.model.Student), but only the first will be used: [@org.springframework.web.bind.annotation.RequestMapping(consumes={}, headers={}, method={}, name="", params={}, path={"/register"}, produces={}, value={"/register"}), @org.springframework.web.bind.annotation.PostMapping(consumes={}, headers={}, name="", params={}, path={}, produces={}, value={})]
+2025-02-16T21:58:24.358-05:00  WARN 6632 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Multiple @RequestMapping annotations found on public org.springframework.http.ResponseEntity com.example.student_management.api.UniversityClassController.addclass(com.example.student_management.model.UniversityClass), but only the first will be used: [@org.springframework.web.bind.annotation.RequestMapping(consumes={}, headers={}, method={}, name="", params={}, path={"/add"}, produces={}, value={"/add"}), @org.springframework.web.bind.annotation.PostMapping(consumes={}, headers={}, name="", params={}, path={}, produces={}, value={})]
+2025-02-16T21:58:24.505-05:00  WARN 6632 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2025-02-16T21:58:24.506-05:00  INFO 6632 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-16T21:58:24.508-05:00  INFO 6632 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-02-16T21:58:24.513-05:00  INFO 6632 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-02-16T21:58:24.521-05:00  INFO 6632 --- [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-02-16T21:58:24.533-05:00 ERROR 6632 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2025-02-16T22:01:15.950-05:00  INFO 25680 --- [main] c.e.s.StudentManagementApplication       : Starting StudentManagementApplication using Java 17.0.11 with PID 25680 (C:\Users\mpudi\Desktop\Student-Management-System-main\student-management\target\classes started by mpudi in C:\Users\mpudi\Desktop\Student-Management-System-main\student-management)
+2025-02-16T22:01:15.952-05:00  INFO 25680 --- [main] c.e.s.StudentManagementApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-02-16T22:01:16.335-05:00  INFO 25680 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-16T22:01:16.372-05:00  INFO 25680 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 27 ms. Found 2 JPA repository interfaces.
+2025-02-16T22:01:16.704-05:00  INFO 25680 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-02-16T22:01:16.713-05:00  INFO 25680 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-16T22:01:16.714-05:00  INFO 25680 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-16T22:01:16.753-05:00  INFO 25680 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-16T22:01:16.753-05:00  INFO 25680 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 769 ms
+2025-02-16T22:01:16.847-05:00  INFO 25680 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-16T22:01:16.877-05:00  INFO 25680 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.5.Final
+2025-02-16T22:01:16.895-05:00  INFO 25680 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-02-16T22:01:17.048-05:00  INFO 25680 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-16T22:01:17.065-05:00  INFO 25680 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-02-16T22:01:17.250-05:00  INFO 25680 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@da22aa
+2025-02-16T22:01:17.252-05:00  INFO 25680 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-02-16T22:01:17.280-05:00  WARN 25680 --- [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-02-16T22:01:17.282-05:00  WARN 25680 --- [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-02-16T22:01:17.294-05:00  INFO 25680 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-16T22:01:17.796-05:00  INFO 25680 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-16T22:01:17.840-05:00  INFO 25680 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-16T22:01:18.078-05:00  WARN 25680 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-16T22:01:18.125-05:00  WARN 25680 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Multiple @RequestMapping annotations found on public org.springframework.http.ResponseEntity com.example.student_management.api.StudentController.registerStudent(com.example.student_management.model.Student), but only the first will be used: [@org.springframework.web.bind.annotation.RequestMapping(consumes={}, headers={}, method={}, name="", params={}, path={"/register"}, produces={}, value={"/register"}), @org.springframework.web.bind.annotation.PostMapping(consumes={}, headers={}, name="", params={}, path={}, produces={}, value={})]
+2025-02-16T22:01:18.130-05:00  WARN 25680 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Multiple @RequestMapping annotations found on public org.springframework.http.ResponseEntity com.example.student_management.api.UniversityClassController.addclass(com.example.student_management.model.UniversityClass), but only the first will be used: [@org.springframework.web.bind.annotation.RequestMapping(consumes={}, headers={}, method={}, name="", params={}, path={"/add"}, produces={}, value={"/add"}), @org.springframework.web.bind.annotation.PostMapping(consumes={}, headers={}, name="", params={}, path={}, produces={}, value={})]
+2025-02-16T22:01:18.282-05:00  INFO 25680 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-02-16T22:01:18.287-05:00  INFO 25680 --- [main] c.e.s.StudentManagementApplication       : Started StudentManagementApplication in 2.611 seconds (process running for 2.822)
+2025-02-16T22:07:53.140-05:00  INFO 30552 --- [main] c.e.s.StudentManagementApplication       : Starting StudentManagementApplication using Java 23.0.2 with PID 30552 (C:\Users\mpudi\Desktop\Student-Management-System-main\student-management\target\classes started by mpudi in C:\Users\mpudi\Desktop\Student-Management-System-main\student-management)
+2025-02-16T22:07:53.142-05:00  INFO 30552 --- [main] c.e.s.StudentManagementApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-02-16T22:07:53.578-05:00  INFO 30552 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-16T22:07:53.608-05:00  INFO 30552 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22 ms. Found 2 JPA repository interfaces.
+2025-02-16T22:07:53.912-05:00  INFO 30552 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-02-16T22:07:53.921-05:00  INFO 30552 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-16T22:07:53.922-05:00  INFO 30552 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-16T22:07:53.959-05:00  INFO 30552 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-16T22:07:53.960-05:00  INFO 30552 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 774 ms
+2025-02-16T22:07:54.051-05:00  INFO 30552 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-16T22:07:54.082-05:00  INFO 30552 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.5.Final
+2025-02-16T22:07:54.102-05:00  INFO 30552 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-02-16T22:07:54.279-05:00  INFO 30552 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-16T22:07:54.298-05:00  INFO 30552 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-02-16T22:07:54.531-05:00  INFO 30552 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7462ba4b
+2025-02-16T22:07:54.533-05:00  INFO 30552 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-02-16T22:07:54.564-05:00  WARN 30552 --- [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-02-16T22:07:54.565-05:00  WARN 30552 --- [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-02-16T22:07:54.574-05:00  INFO 30552 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-16T22:07:55.096-05:00  INFO 30552 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-16T22:07:55.147-05:00  INFO 30552 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-16T22:07:55.385-05:00  WARN 30552 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-16T22:07:55.427-05:00  WARN 30552 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Multiple @RequestMapping annotations found on public org.springframework.http.ResponseEntity com.example.student_management.api.StudentController.registerStudent(com.example.student_management.model.Student), but only the first will be used: [@org.springframework.web.bind.annotation.RequestMapping(consumes={}, headers={}, method={}, name="", params={}, path={"/register"}, produces={}, value={"/register"}), @org.springframework.web.bind.annotation.PostMapping(consumes={}, headers={}, name="", params={}, path={}, produces={}, value={})]
+2025-02-16T22:07:55.430-05:00  WARN 30552 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Multiple @RequestMapping annotations found on public org.springframework.http.ResponseEntity com.example.student_management.api.UniversityClassController.addclass(com.example.student_management.model.UniversityClass), but only the first will be used: [@org.springframework.web.bind.annotation.RequestMapping(consumes={}, headers={}, method={}, name="", params={}, path={"/add"}, produces={}, value={"/add"}), @org.springframework.web.bind.annotation.PostMapping(consumes={}, headers={}, name="", params={}, path={}, produces={}, value={})]
+2025-02-16T22:07:55.591-05:00  INFO 30552 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-02-16T22:07:55.597-05:00  INFO 30552 --- [main] c.e.s.StudentManagementApplication       : Started StudentManagementApplication in 2.785 seconds (process running for 3.264)
+2025-02-16T22:08:23.445-05:00  INFO 30552 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-16T22:08:23.445-05:00  INFO 30552 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-02-16T22:08:23.446-05:00  INFO 30552 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-02-16T22:48:36.800-05:00  INFO 30552 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-16T22:48:36.811-05:00  INFO 30552 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-02-16T22:48:36.868-05:00  INFO 30552 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-16T22:48:36.875-05:00  INFO 30552 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-02-16T22:48:36.886-05:00  INFO 30552 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
